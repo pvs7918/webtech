@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url(./font/Gilroy-Semibold.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./font/Gilroy-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./font/Gilroy-Medium.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+    background: #FFFFFF;
+}
+
+.container {
+    width: 1200px;
+	margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 51px;
+    margin-bottom: 100px;
+}
+
+.header__logo {
+    padding-right: 500px;
+    font-family: Gilroy-Bold;
+}
+
+.header__menu {
+    width: 533px;
+    display: flex;
+    justify-content: space-between;
+    color: #F25822;
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: row;
+    gap: 41px;
+    margin-bottom: 178px;
+}
+
+.main__title {
+    width: 522px;
+    margin-bottom: 17px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main__subtitle {
+    margin-bottom: 37px;
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main__image {
+    width: 544.814px;
+    height: 374.843px;
+    flex-shrink: 0;
+}
+
+.main__buttons_btn {
+    /*размеры, цвет кнопки*/
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    background: #F25822;
+    
+    /*текст кнопки*/
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__logos {
+    padding-top: 97px;
+    padding-bottom: 96px;    
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__logo {
+    /*размеры логотипа в футере*/
+    width: 160px;
+    height: 50px;
+}
