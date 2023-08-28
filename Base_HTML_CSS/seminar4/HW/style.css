@@ -33,6 +33,7 @@ body {
 .navigation {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 51px;
     margin-bottom: 100px;
 }
