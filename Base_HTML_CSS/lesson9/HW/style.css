@@ -1,10 +1,26 @@
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url(./font/Gilroy-Semibold.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./font/Gilroy-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./font/Gilroy-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(./font/Gilroy-Regular.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    /*color: #ffffff;*/
 }
 
 .top {
@@ -18,8 +34,15 @@ body {
 
 .top_item {
     display: grid;
-    justify-items: center;
-    gap: 30px;
+    justify-items: left;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 29px;
+    padding-right: 31px;
+}
+
+.top_item_shadow {
+    box-shadow:3px 3px 3px darkgrey;
 }
 
 .top_heading {
@@ -28,17 +51,19 @@ body {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal
-
+    line-height: normal;
+    padding-top: 25px;
+    padding-bottom: 17px;
 }
 
-.top_item_text {
+.top_item_txt {
     color: #666;
     font-family: Gilroy-Regular;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    padding-bottom: 25px;
 }
 
 .top_details {
@@ -50,9 +75,13 @@ body {
     line-height: 150%;
 }
 
+.content {
+    background: #FAFAFA;
+}
+
 .content_head {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     padding-top: 92px;
     padding-bottom: 54px;
 }
@@ -67,31 +96,38 @@ body {
 }
 
 .content_head_text {
-    width: 682px;
     color: #666;
+    text-align: center;
     font-family: Gilroy-Regular;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    justify-content: center;
+    line-height: 150%;
+    width: 682px;
 }
 
 .content_main {
     display: grid;
     grid-template-columns: repeat(3, 385px);
+    column-gap: 30px;
     justify-content: center;
-    gap: 9px;
     padding-bottom: 100px;
 }
 
 .content_item {
     display: grid;
     justify-items: center;
+    background: #FFF;
+    padding-bottom: 50px;
+}
+
+.content_item_shadow {
+    box-shadow:3px 3px 3px darkgrey;
 }
 
 .content_item_img {
-    height: 289px;
+    width: 350px;
+    /*height: 289px;*/
 }
 
 .content_heading {
@@ -112,6 +148,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    width: 310px;
     padding-bottom: 39px;
 }
 
