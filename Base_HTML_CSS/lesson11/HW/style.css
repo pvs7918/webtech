@@ -1,0 +1,50 @@
+.hmenu {
+    width: 1600px;
+    height: 75px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 970px 160px;
+    padding-left: 231px;
+    padding-right: 240px;
+    background: #222;
+}
+
+.hmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+
+}
+
+.cont__prev {
+
+}
+
+.cont__prev__item {
+
+}
+
+.cont__main {
+
+}
+
+.footer__btn {
+    /*text*/
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /*box*/
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    border-color: #F26376;
+
+	
+}
