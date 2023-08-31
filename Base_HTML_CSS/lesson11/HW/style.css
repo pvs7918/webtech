@@ -4,16 +4,19 @@
 }
 
 body {
-    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    /*margin: 0 auto;*/
 }
 
 .hmenu {
     width: 1600px;
     height: 75px;
     flex-shrink: 0;
-    display: grid;
-    grid-template-columns: 970px 160px;
-    align-items: center;
+    
+    display: flex;
+    /*grid-template-columns: 970px 160px;*/
+    justify-content: center;
+    align-items: center; /* вертикальное центрирование */
 
     padding-left: 231px;
     padding-right: 240px;
@@ -24,10 +27,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #F1E4E6;
 }
 
 .content {
     background: #FFF;
+    padding-top: 65px;
     padding-bottom: 48px;
 }
 
@@ -37,10 +42,34 @@ body {
     grid-template-rows: 260px 180px;
     justify-content: center;
     gap: 30px;
+    
 }
 
-.cprev__item {
+.ctitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
+    padding-top: 96px;
+    padding-bottom: 48px;
+}
+
+.ctitle_big {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ctitle_small {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .cmain {
@@ -52,8 +81,45 @@ body {
     text-align: center;
 }
 
-.cmain__item {
+.cmain_item {
     justify-content: center;
+}
+
+.cmain_img {
+    height: 420px;
+}
+
+.cmain_desc {
+    padding: 24px 16px;
+    text-align: left;
+}
+
+.cmain_title {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cmain_text {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 16px 0;
+}
+
+.cmain_price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .footer {
