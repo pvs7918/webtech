@@ -8,18 +8,24 @@ body {
     /*margin: 0 auto;*/
 }
 
-.hmenu {
+.container {
     width: 1600px;
-    height: 75px;
-    flex-shrink: 0;
-    
+	margin: 0 auto;
+}
+
+.hmenu {
     display: flex;
-    /*grid-template-columns: 970px 160px;*/
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+
+    /*display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: 75px;
+    order: 1, 3;
+    justify-items: right;
     justify-content: center;
     align-items: center; /* вертикальное центрирование */
-
-    padding-left: 231px;
-    padding-right: 240px;
     background: #222;
 }
 
@@ -27,6 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     background: #F1E4E6;
 }
 
