@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	background: #020a18;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+}
+
+/* --------------------------- */
+
+header {
+	margin-bottom: 160px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	padding-top: 39px;
+	padding-bottom: 39px;
+}
+
+.link {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+}
+
+main {
+	margin-bottom: 197px;
+}
+
+.main__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main__content__leftSide {
+	width: 604px;
+}
+
+.small-title {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 160%;
+	text-transform: uppercase;
+	color: #3a68b8;
+	margin-bottom: 10px;
+}
+
+.big-title {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 55px;
+	line-height: 130%;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.text {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 160%;
+	color: #ffffff;
+	opacity: 0.7;
+	width: 558px;
+	margin-bottom: 50px;
+}
+
+.btns-list {
+	display: flex;
+	gap: 20px;
+}
+
+.btn {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
+	background: #3a68b8;
+	border-radius: 5px;
+	padding: 15px 30px;
+	border: none;
+}
+
+.btn2 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logos {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 99px;
+	padding-top: 197px;
+}
+
+.cards-list__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 30px;
+	opacity: 0.7;
+}
+
+.card {
+	background: #132035;
+	border-radius: 10px;
+	display: flex;
+	gap: 30px;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 30px;
+	color: #ffffff;
+}
+
+.card h3 {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 125%;
+}
+
+.card p {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+.card-big {
+	grid-column: span 2;
+	grid-row: span 2;
+	gap: 60px;
+}
+
+@media (max-width: 1024px) and (min-width: 848px) {
+	.container {
+		width: 767px;
+	}
+
+	.navigation {
+		gap: 32px;
+	}
+
+	.main__content {
+		flex-direction: column;
+		align-items: center;
+		gap: 128px;
+		padding: 0 81px;
+	}
+
+	.small-title {
+		font-size: 16px;
+	}
+
+	.big-title {
+		width: 604px;
+		font-size: 48px;
+	}
+
+	.main__content img {
+		width: 414px;
+	}
+
+	.logos {
+		width: 604px;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 32px;
+		padding-bottom: 120px;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.cards-list__wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		gap: 32px;
+	}
+
+	.card {
+		background: rgba(19, 32, 53, 0.4);
+		width: 362px;
+		height: 389px;
+	}
+}
+
+@media (max-width: 847px) {
+	.container {
+		width: 343px;
+	}
+
+	header {
+		margin-bottom: 64px;
+	}
+
+	.navigation {
+		gap: 16px;
+	}
+
+	.link {
+		font-size: 14px;
+	}
+
+	.main__content {
+		padding: 0;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 128px;
+	}
+
+	.main__content__leftSide {
+		width: 343px;
+	}
+
+	.small-title {
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+
+	.big-title {
+		width: 343px;
+		font-size: 28px;
+		margin-bottom: 64px;
+	}
+
+	.text {
+		width: 343px;
+		margin-bottom: 39px;
+	}
+
+	.btns-list {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+
+	.logos {
+		width: 343px;
+		padding-bottom: 108px;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 32px;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.cards-list__wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		gap: 32px;
+	}
+
+	/* .card {
+		width: 343px;
+	} */
+
+	.cards-list__wrapper.container {
+		width: 362px;
+	}
+
+	/* .container2 {
+		width: 362px;
+	} */
+}
+
+/* адаптив под мобильную версию
+https://www.figma.com/file/wBdyeMhgGCn3fKThaQ1yXG/Landing_Page?node-id=0%3A1 (Frame 7)
+*/
+@media (max-width: 375px) {
+		.container {
+			width: 343px; 
+		}
+		
+		header {
+			margin-bottom: 64px;
+		}
+
+		.navigation {
+			gap: 32px;
+		}
+
+		.link {
+			font-size: 14px;
+		}
+
+		.main__content {
+			padding: 0;
+			text-align: center;
+		}
+
+		.main__content__leftSide {
+			width: 343px;
+		}
+
+		.small-title {
+			font-size: 14px;
+			margin-bottom: 16px;
+		}
+
+		.big-title {
+			width: 342px;
+			font-size: 28px;
+			margin-bottom: 64px;
+		}
+
+		.text {
+			width: 343px;
+			margin-bottom: 39px;
+		}
+
+		.btns-list {
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+		}
+
+		.logos {
+			width: 343px;
+			padding-bottom: 108px;
+		}
+		
+		.card {
+			width: 343px;
+		}
+
+		.cards-list__wrapper.container {
+			width: 362px;
+		}
+}

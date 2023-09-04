@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1600px;
+	margin: 0 auto;
+}
+
+/*верхнее меню*/
+.hmenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background: #222;
+}
+
+/*кнопки справа в верхнем меню*/
+.hmenu__btns_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+
+.hmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: #F1E4E6;
+}
+
+.content {
+    background: #FFF;
+    padding-top: 65px;
+    padding-bottom: 48px;
+}
+
+/* карточки категорий */
+.cprev {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cprev__item {
+    /*background-color: #C4C4C4;*/
+    
+}
+
+.cprev__img {
+    background: rgba(33, 22, 22, 0.70);
+}
+
+
+/*Заголовок после карточек категорий и перед карточками товаров*/
+.ctitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding-top: 96px;
+    padding-bottom: 48px;
+}
+
+.ctitle_big {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ctitle_small {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Карточки товаров */
+.cmain {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 581px);
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.cmain_item {
+    justify-content: center;
+}
+
+.cmain_img {
+    height: 420px;
+}
+
+.cmain_desc {
+    padding: 24px 16px;
+    text-align: left;
+}
+
+.cmain_title {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cmain_text {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 16px 0;
+}
+
+.cmain_price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.footer__btn {
+    /*text*/
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /*box*/
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    border-color: #F26376;
+}
+
+/* адаптив под планшет */
+
+@media (max-width: 1024px) and (min-width: 848px) {
+    .container {
+		width: 770px;
+	}
+
+    .hmenu {
+        height: 74px;
+    }
+}
