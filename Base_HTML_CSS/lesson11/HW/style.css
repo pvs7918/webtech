@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
 }
 
 .container {
@@ -16,18 +16,16 @@ body {
 /*верхнее меню*/
 .hmenu {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-
-    /*display: grid;
-    grid-template-columns: repeat(4, 400px);
-    grid-template-rows: 75px;
-    order: 1, 3;
-    justify-items: right;
     justify-content: center;
-    align-items: center; /* вертикальное центрирование */
+    height: 75px;
     background: #222;
+}
+
+.hmenu_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1130px;
 }
 
 /*кнопки справа в верхнем меню*/
@@ -35,16 +33,50 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 159px;
 }
-
 
 .hmain {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: row;
     background: #F1E4E6;
+}
+
+.banner-titlewrapper {
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+    padding-left: 64px;
+}
+
+.banner_rectangle {
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    background: #F16D7F;
+}
+
+.bannertitle1 {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.bannertitle2 {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bannertitle2_2 {
+    color: #F16D7F;
 }
 
 .content {
@@ -62,15 +94,46 @@ body {
     gap: 30px;
 }
 
-.cprev__item {
-    /*background-color: #C4C4C4;*/
-    
+.cprev__item1 {
+    background-image: url('img/1-for_women.svg');
 }
 
-.cprev__img {
-    background: rgba(33, 22, 22, 0.70);
+.cprev__item2 {
+    background-image: url('img/2-for men.svg');
 }
 
+.cprev__item3 {
+    background-image: url('img/3-for kids.svg');
+}
+
+.cprev__item4 {
+    background-image: url('img/4-ACCESORIES.svg');
+    grid-column: span 3;
+}
+
+.cprev__bg {
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.cprev__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.cprev__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
 
 /*Заголовок после карточек категорий и перед карточками товаров*/
 .ctitle {
@@ -112,6 +175,7 @@ body {
 
 .cmain_item {
     justify-content: center;
+    background-color: #F8F8F8;
 }
 
 .cmain_img {
