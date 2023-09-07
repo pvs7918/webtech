@@ -228,7 +228,6 @@ body {
     padding-bottom: 60px;
 }
 
-
 .footer__btn {
     /*text*/
     color: #F26376;
@@ -241,4 +240,176 @@ body {
     padding: 15px 40px;
     background: none;
     border: 1px solid #f26376;
+}
+
+/* адаптив под планшет */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+		width: 770px;
+	}
+
+    .hmenu {
+        height: 74px;
+    }
+
+    .hmenu_btns {
+        width: 704px;
+    }
+
+    .hmenu__btns_group {
+        width: 169px;
+    }
+
+    .hmain_img {
+        width: 386px;
+        height: 368px;
+    }
+
+    .banner-titlewrapper {
+        gap: 16px;
+        padding-left: 39px;
+    }
+
+    .bannertitle1 {
+        font-size: 44px;
+    }
+    .bannertitle2 {
+        font-size: 24px;
+    }
+
+    .content {
+        padding-bottom: 32.5px;
+    }
+
+    .cprev {
+        display: grid;
+        grid-template-columns: repeat(3, 231.973px);
+        grid-template-rows: 167.617px 116.043px;
+        justify-content: center;
+        gap: 19.38px;
+    }
+
+    .cprev__text {
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+    .cprev__title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .ctitle {
+        padding-top: 109.92px;
+        padding-bottom: 73.74px;
+    }
+    
+    .cmain {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 581px);
+        gap: 17px;
+    }
+
+    .cmain_desc {
+        padding: 25.35px 12.65px;
+    }
+
+    .cmain_text {
+        font-size: 14px;
+        padding-top: 12.65px;
+        padding-bottom: 18px;
+    }
+    
+    .footer {
+        padding-bottom: 70.52px;
+    }
+}
+
+/* адаптив под мобильный телефон  */
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .container {
+		width: 375px;
+	}
+
+    .hmenu {
+        height: 74px;
+    }
+
+    .hmenu_btns {
+        width: 343px;
+    }
+
+    .hmenu__btns_group {
+        width: 32px;
+    }
+
+    .hmain__item1 {
+        display: none;
+    }
+
+    .hmain_img {
+        width: 386px;
+        height: 368px;
+    }
+
+    .banner-titlewrapper {
+        gap: 16px;
+        padding-left: 39px;
+    }
+
+    .bannertitle1 {
+        font-size: 44px;
+    }
+    .bannertitle2 {
+        font-size: 20px;
+    }
+
+    .content {
+        padding-bottom: 32.5px;
+    }
+
+    .cprev {
+        display: grid;
+        grid-template-columns: repeat(3, 231.973px);
+        grid-template-rows: 167.617px 116.043px;
+        justify-content: center;
+        gap: 19.38px;
+    }
+
+    .cprev__text {
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+    .cprev__title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .ctitle {
+        padding-top: 109.92px;
+        padding-bottom: 73.74px;
+    }
+    
+    .cmain {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 581px);
+        gap: 17px;
+    }
+
+    .cmain_desc {
+        padding: 25.35px 12.65px;
+    }
+
+    .cmain_text {
+        font-size: 14px;
+        padding-top: 12.65px;
+        padding-bottom: 18px;
+    }
+    
+    .footer {
+        padding-bottom: 70.52px;
+    }
 }
