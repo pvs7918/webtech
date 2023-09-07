@@ -344,9 +344,28 @@ body {
     .hmenu__btns_group {
         width: 32px;
     }
+    
+    .hmenu_img2 {
+        display: none;
+    }
+
+    .hmenu_img3 {
+        display: none;
+    }    
+
+    .hmain {
+        height: 363px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .hmain__item1 {
         display: none;
+    }
+    
+    .hmain__item2 {
+
     }
 
     .hmain_img {
@@ -355,27 +374,52 @@ body {
     }
 
     .banner-titlewrapper {
-        gap: 16px;
-        padding-left: 39px;
+        gap: 15px;
+        padding-left: 0;
+     }
+
+    .banner_rectangle {
+        height: 61px;
     }
 
     .bannertitle1 {
-        font-size: 44px;
+        font-size: 38px;
     }
     .bannertitle2 {
         font-size: 20px;
     }
 
     .content {
-        padding-bottom: 32.5px;
+        padding-top: 64px;
+        padding-bottom: 40.61px;
     }
 
     .cprev {
-        display: grid;
-        grid-template-columns: repeat(3, 231.973px);
-        grid-template-rows: 167.617px 116.043px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 19.38px;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .cprev__item1 {
+    width: 343px;
+    height: 247px;
+    }
+
+    .cprev__item2 {
+        width: 344px;
+        height: 249px;
+    }
+
+    .cprev__item3 {
+        width: 343px;
+        height: 248px;
+    }
+    
+    .cprev__item4 {
+        width: 343.262px;
+        height: 111px;
     }
 
     .cprev__text {
@@ -389,27 +433,27 @@ body {
     }
 
     .ctitle {
-        padding-top: 109.92px;
-        padding-bottom: 73.74px;
+        padding-top: 64px;
+        padding-bottom: 64.7px;
     }
     
     .cmain {
-        grid-template-columns: repeat(2, 360px);
-        grid-template-rows: repeat(3, 581px);
-        gap: 17px;
+        grid-template-columns: repeat(1, 359px);
+        grid-template-rows: repeat(6, 579px);
+        gap: 16.61px;
     }
 
     .cmain_desc {
-        padding: 25.35px 12.65px;
+        padding: 25.28px 28.72px 19.95px 16.41px;
     }
 
     .cmain_text {
         font-size: 14px;
-        padding-top: 12.65px;
-        padding-bottom: 18px;
+        padding-top: 12.62px;
+        padding-bottom: 17.95px;
     }
     
     .footer {
-        padding-bottom: 70.52px;
+        padding-bottom: 85px;
     }
 }
