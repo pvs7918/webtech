@@ -424,6 +424,7 @@ body {
 .footer_end_links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 7.29px;
 }
 
@@ -436,6 +437,30 @@ body {
     flex-shrink: 0;
     background-color: #FFF;
 }
+
+/* Эффекты наведения */
+.hmenu__img__logo:hover {
+    background-color: #1f6ce8;
+}
+
+.hmenu__img:hover {
+    background-color: #F16D7F;
+}
+
+.cmain_footer_btn:hover {
+    color: black;
+    background-color: orangered;
+}
+
+.footer_main_item2_btn:hover {
+    color: black;
+    background-color: rgb(7, 77, 169);
+}
+
+.footer_end_link:hover {
+    background-color: #F16D7F;
+}
+
 
 /* адаптив под планшет */
 
@@ -739,7 +764,26 @@ body {
         height: 46.935px;
     }
     
-    .footer_end_box {
-        width: 693px;
+    .footer_end {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        height: 143px;
     }
+
+    .footer_end_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 375px;
+    }
+
+    .footer_end_links {
+        order: -1;
+        width: 147.662px;
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
+
 }
