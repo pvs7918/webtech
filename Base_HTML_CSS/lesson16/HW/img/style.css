@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1600px;
+	margin: 0 auto;
+}
+
+/*верхнее меню*/
+.hmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background: #222;
+}
+
+.hmenu_btns {
+    display: flex;
+    justify-content: space-between;
+    width: 1130px;
+}
+
+.hmenu_left_part {
+    width: 110.999px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*кнопки справа в верхнем меню*/
+.hmenu__btns_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: 29px;
+}
+
+.hmain {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    background: #F1E4E6;
+}
+
+.banner-titlewrapper {
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+    padding-left: 64px;
+}
+
+.banner_rectangle {
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    background: #F16D7F;
+}
+
+.bannertitle1 {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.bannertitle2 {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.bannertitle2_2 {
+    color: #F16D7F;
+}
+
+.content {
+    background: #FFF;
+    padding-top: 65px;
+    padding-bottom: 48px;
+}
+
+/* карточки категорий */
+.cprev {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cprev__item1 {
+    background-image: url('img/1-for_women.svg');
+}
+
+.cprev__item2 {
+    background-image: url('img/2-for men.svg');
+}
+
+.cprev__item3 {
+    background-image: url('img/3-for kids.svg');
+}
+
+.cprev__item4 {
+    background-image: url('img/4-ACCESORIES.svg');
+    grid-column: span 3;
+}
+
+.cprev__bg {
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.cprev__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.cprev__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
+
+/*Заголовок после карточек категорий и перед карточками товаров*/
+.ctitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding-top: 96px;
+    padding-bottom: 48px;
+}
+
+.ctitle_big {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ctitle_small {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Карточки товаров */
+.cmain {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 581px);
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.cmain_item {
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+.cmain_img {
+    height: 420px;
+}
+
+.cmain_desc {
+    padding: 24px 16px;
+    text-align: left;
+}
+
+.cmain_title {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cmain_text {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 16px 0;
+}
+
+.cmain_price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.footer__btn {
+    /*text*/
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 15px 40px;
+    background: none;
+    border: 1px solid #f26376;
+}
+
+/* адаптив под планшет */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+		width: 770px;
+	}
+
+    .hmenu {
+        height: 74px;
+    }
+
+    .hmenu_btns {
+        width: 704px;
+    }
+
+    .hmenu__btns_group {
+        width: 169px;
+    }
+
+    .hmain_img {
+        width: 386px;
+        height: 368px;
+    }
+
+    .banner-titlewrapper {
+        gap: 16px;
+        padding-left: 39px;
+    }
+
+    .bannertitle1 {
+        font-size: 44px;
+    }
+    .bannertitle2 {
+        font-size: 24px;
+    }
+
+    .content {
+        padding-bottom: 32.5px;
+    }
+
+    .cprev {
+        display: grid;
+        grid-template-columns: repeat(3, 231.973px);
+        grid-template-rows: 167.617px 116.043px;
+        justify-content: center;
+        gap: 19.38px;
+    }
+
+    .cprev__text {
+        font-size: 16px;
+        line-height: normal;
+    }
+    
+    .cprev__title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .ctitle {
+        padding-top: 109.92px;
+        padding-bottom: 73.74px;
+    }
+    
+    .cmain {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 581px);
+        gap: 17px;
+    }
+
+    .cmain_desc {
+        padding: 25.35px 12.65px;
+    }
+
+    .cmain_text {
+        font-size: 14px;
+        padding-top: 12.65px;
+        padding-bottom: 18px;
+    }
+    
+    .footer {
+        padding-bottom: 70.52px;
+    }
+}
