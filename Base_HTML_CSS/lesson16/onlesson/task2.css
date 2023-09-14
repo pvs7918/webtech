@@ -1,0 +1,41 @@
+.product {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.product__img {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: forestgreen;
+    border: 2px solid blue;
+}
+
+.product_new::after {
+    content: 'new';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_sale::before {
+    content: 'sale';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
